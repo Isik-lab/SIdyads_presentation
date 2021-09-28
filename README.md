@@ -12,3 +12,6 @@ The script calls `write_event_files.m` to save the data in BIDS format.
 This must be run prior to the experiment. It can be be called by `python3 assign_conditions.py SID` where SID is the participant number. It makes an output data directory with the name of the participant. It makes some empty directories that `SIdyads.m` writes into during the experiment. Most importantly, it writes `data/SID/runfiles/`. Each file is a CSV file of the videos to be presented on a particular run. 
 
 The CSV files are grouped into runs of 6. Every six runs contains 2 test runs and 4 training runs. The two test runs are repeats of one another presenting the 50 videos used to test the coding models. Each of the training runs are unique and each present 50 of the training videos for model fitting. 
+
+## `test.csv` and `train.csv`
+These CSV files contain the names and behavioral features of the videos in the training and test set. These files are used by `assign_conditions.py` to write the run files. 
