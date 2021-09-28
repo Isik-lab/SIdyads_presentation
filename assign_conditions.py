@@ -3,6 +3,7 @@ import os
 import shutil
 import glob
 import time
+import argparse
 
 import numpy as np
 import pandas as pd
@@ -52,5 +53,12 @@ def get_past_runs(SID=77):
                 count += 1
         print('\nRuns assigned. Closing...')
 
+def getArgs():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('sid', type=str, help='id of the subject')
+    args = parser.parse_args()
+    return args
+
 if __name__ == "__main__":
-    get_past_runs()
+    args = getArgs()
+    get_past_runs(args.sid)

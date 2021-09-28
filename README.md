@@ -6,7 +6,7 @@ Main presentation script used for the fMRI experiment. 50 3-second dyadic videos
 
 The partcipant's task is to hit a button when there is a more than 2 people present in a video. These videos are not analyzed and serve as an attention control.
 
-The script calls ``write_event_files.m'' to save the data in BIDS format. 
+The script calls `write_event_files.m' to save the data in BIDS format. 
 
 ## assign_conditions.py
-This must be run 
+This must be run prior to the experiment. It can be be called by `python3 assign_conditions.py SID' where SID is the participant number. 
