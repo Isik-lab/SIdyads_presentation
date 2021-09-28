@@ -9,4 +9,6 @@ The partcipant's task is to hit a button when there is a more than 2 people pres
 The script calls `write_event_files.m` to save the data in BIDS format. 
 
 ## assign_conditions.py
-This must be run prior to the experiment. It can be be called by `python3 assign_conditions.py SID1 where SID is the participant number. It makes an output data directory with the name of the participant. It makes some empty directories that `SIdyads.m` writes into during the experiment. Most importantly, it writes `data/SID/runfiles/`. Each file is a csv of the videos to be presented on a particular run. 
+This must be run prior to the experiment. It can be be called by `python3 assign_conditions.py SID` where SID is the participant number. It makes an output data directory with the name of the participant. It makes some empty directories that `SIdyads.m` writes into during the experiment. Most importantly, it writes `data/SID/runfiles/`. Each file is a CSV file of the videos to be presented on a particular run. 
+
+The CSV files are grouped into runs of 6. Every six runs contains 2 test runs and 4 training runs. The two test runs are repeats of one another presenting the 50 videos used to test the coding models. Each of the training runs are unique and each present 50 of the training videos for model fitting. 
