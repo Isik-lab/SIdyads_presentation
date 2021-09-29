@@ -16,4 +16,4 @@ The CSV files are grouped into runs of 6. Every six runs contains 2 test runs an
 While `assign_conditions.py` randomly assigns the training video to a particular run. It does not shuffle the video presentation order. This is done in `SIdyads.m`.
 
 ## `test.csv` and `train.csv`
-These CSV files contain the names and behavioral features of the videos in the training and test set. These files are used by `assign_conditions.py` to write the run files. 
+These CSV files contain the names of the videos in the training and test set. These files are used by `assign_conditions.py` to write the run files. 

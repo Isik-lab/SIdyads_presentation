@@ -1,2 +1,4 @@
 data/
 social_dyad_videos_500ms/
+test_features.csv
+train_features.csv
