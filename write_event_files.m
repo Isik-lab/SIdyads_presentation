@@ -58,7 +58,7 @@ j.identifier.Description = 'The name of the movie file that is presented on a gi
 
 %response
 j.response.LongName = 'Participant response boolean'; 
-j.response.Description = 'Whether the participant responded on a given trial participants should only respond on "crowd" trials. "Dyad" trials with a response should be excluded from the GLM.'; 
+j.response.Description = 'Whether the participant responded on a given trial participants should only respond on crowd trials. Dyad trials with a response should be excluded from the GLM.'; 
 
 %Stimulus presentation
 if ispc
