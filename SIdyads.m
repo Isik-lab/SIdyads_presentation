@@ -117,6 +117,9 @@ else
     %     AssertOpenGL;
     %     PsychDebugWindowConfiguration;
     
+    %Suppress frogs
+    Screen('Preference','VisualDebugLevel', 0);
+    
     screen = max(Screen('Screens'));
     [win, rect] = Screen('OpenWindow', screen, 0);
     [x0,y0] = RectCenter(rect);
@@ -171,7 +174,7 @@ else
         % wait 2 TRs to start
         while (GetSecs-start<start_wait_time)
             if still_loading
-                movie(1) = Screen('OpenMovie', win, T.movie_path{itrial}, async, preloadsecs);
+                movie(1) = Screen('OpenMovie', win, T.movie_path{1}, async, preloadsecs);
                 if movie(1) > 0; still_loading = 0; end
             end
         end
